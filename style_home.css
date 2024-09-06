@@ -132,4 +132,16 @@ p {
 .links-cont li {
   margin-bottom: 0.5rem;
 }
+.project-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
 
+.gremllin-img {
+  width: 30%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
