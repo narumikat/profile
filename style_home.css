@@ -8,10 +8,29 @@ body {
   /* background: rgba(250, 242, 250, 0.9); */
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   font-family: "IBM Plex Mono", monospace;
-  /* font-weight: 100; */
   font-style: normal;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--dark-purple);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--dark-purple);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.dot {
+  font-size: 3rem;
+  color: var(--light-purple);
+  font-weight: 700;
+  margin: 0 0.5rem;
 }
 
 * {
@@ -70,26 +89,8 @@ p {
   padding-top: 100px;
 }
 
-.second-container h1,
-.second-container h1 {
-  font-size: 2rem;
-  color: var(--dark-purple);
-  margin-bottom: 0.5rem;
-}
-
 .second-container p {
   margin-top: 0;
-}
-
-.dot {
-  font-size: 3rem;
-  color: var(--light-purple);
-  font-weight: 700;
-}
-
-.second-container h2 {
-  font-size: 3rem;
-  color: var(--dark-purple);
 }
 
 .language strong {
@@ -155,4 +156,18 @@ p {
 
 .gremllin-img:hover {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .dot {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
 }
