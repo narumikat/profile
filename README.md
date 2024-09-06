@@ -20,7 +20,7 @@ This repository contains the personal profile page of Narumi Katayama, a Web Des
 
 ## Getting Started
 
-To view the profile page, open the `index.html` file in your web browser. Ensure you have an active internet connection to load external resources such as stylesheets and scripts.
+To view the profile page, visit the GitHub Pages site at: [https://narumikat.github.io/profile/](https://narumikat.github.io/profile/).
 
 ## Installation
 
