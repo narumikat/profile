@@ -21,12 +21,3 @@ This repository contains the personal profile page of Narumi Katayama, a Web Des
 ## Getting Started
 
 To view the profile page, visit the GitHub Pages site at: [https://narumikat.github.io/profile/](https://narumikat.github.io/profile/).
-
-## Installation
-
-There is no installation required. Simply clone or download this repository and open `index.html` to view the profile.
-
-### Clone the Repository
-
-```bash
-git clone https://github.com/yourusername/profile.git
