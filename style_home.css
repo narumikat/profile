@@ -12,11 +12,10 @@
 body {
   background-image: url(images/bg-home.png);
   background-size: cover;
-  padding-top: 100px;
   /* background: rgba(250, 242, 250, 0.9); */
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, p, span {
   font-family: "IBM Plex Mono", monospace;
   font-style: normal;
 }
@@ -31,7 +30,13 @@ h3 {
   font-size: 2rem;
   color: var(--dark-purple);
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+  font-weight: 700;
 }
 
 .dot {
@@ -44,6 +49,17 @@ h3 {
 p {
   color: var(--black);
   font-weight: 400;
+}
+
+.top-cont {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about span{
+  border-bottom: 2px solid var(--purple);
+  color: var(--dark-purple);
+  font-weight: 700;
 }
 
 .top-cont h1 {
@@ -93,7 +109,8 @@ font-weight: 700;
 }
 
 .second-container {
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .second-container p {
@@ -105,45 +122,58 @@ font-weight: 700;
   font-size: 1.2rem;
 }
 
+.languages-container {
+  margin-left: 2rem;
+}
+
 .skills li {
   font-family: "IBM Plex Mono", monospace;
 }
 
 .links-cont ul {
   list-style: none;
-  padding-left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.links-cont li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
 .links-cont li i {
   font-size: 2rem;
   margin: 1rem;
-  background: #63458a;
+  background: var(--dark-purple);
   color: #faf2fa;
   padding: 1rem;
   border-radius: 32px;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.5s, color 0.5s;
 }
 
 .links-cont li i:hover {
   background: #e4b7e5;
-  color: #63458a;
+  color: var(--dark-purple);
 }
 
 .links-cont li {
   margin-bottom: 0.5rem;
 }
+
+.project {
+  max-height: fit-content;
+  min-height: 600px;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.project span {
+  color: var(--purple);
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
 .project-img {
   width: 100%;
-  height: auto;
+  height: 350px;
   object-fit: cover;
+  object-position: top;
   border-radius: 16px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s;
@@ -154,8 +184,8 @@ font-weight: 700;
 }
 
 .gremllin-img {
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 350px;
   border-radius: 16px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s;
@@ -196,5 +226,22 @@ font-weight: 700;
   .btn {
     font-size: 1rem;
     padding: 0.7rem 1rem;
+  }
+
+  .links-cont li i {
+    font-size: 1.5rem;
+  }
+
+  .languages-container {
+    margin-left: 0;
+  }
+
+  .project-img, .gremllin-img {
+    height: 200px;
+  }
+
+  .project {
+    max-height: fit-content;
+    min-height: 400px;
   }
 }
