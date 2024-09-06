@@ -1,6 +1,14 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+* {
+  --purple: #9071b8;
+  --dark-purple: #63458a;
+  --light-purple: #b79fde;
+  --light: #faf2fa;
+  --black: #212121;
+}
+
 body {
   background-image: url(images/bg-home.png);
   background-size: cover;
@@ -33,14 +41,6 @@ h3 {
   margin: 0 0.5rem;
 }
 
-* {
-  --purple: #9071b8;
-  --dark-purple: #63458a;
-  --light-purple: #b79fde;
-  --light: #faf2fa;
-  --black: #212121;
-}
-
 p {
   color: var(--black);
   font-weight: 400;
@@ -55,6 +55,11 @@ p {
 .top-cont p {
   font-size: 1.2rem;
   color: var(--black);
+}
+
+.top-cont span {
+color: var(--dark-purple);
+font-weight: 700;
 }
 
 .btn-cont {
@@ -75,9 +80,11 @@ p {
   transition: background 1.5s, box-shadow 0.3s;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus, .btn:active {
   background-position: left;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: var(--light);
+  border: none;
 }
 
 .prof-pic {
@@ -159,6 +166,11 @@ p {
 }
 
 @media (max-width: 768px) {
+
+  body {
+    padding-top: 50px;
+  }
+
   h2 {
     font-size: 2.5rem;
   }
@@ -169,5 +181,20 @@ p {
 
   h3 {
     font-size: 1.5rem;
+  }
+
+  .top-cont h1  {
+    padding-top: 50px;
+  }
+
+  .btn-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
   }
 }
