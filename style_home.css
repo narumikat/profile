@@ -12,7 +12,6 @@
 body {
   background-image: url(images/bg-home.png);
   background-size: cover;
-  /* background: rgba(250, 242, 250, 0.9); */
 }
 
 h1, h2, h3, h4, h5, p, span {
@@ -21,7 +20,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--dark-purple);
   font-weight: 700;
 }
@@ -40,7 +39,7 @@ h4 {
 }
 
 .dot {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--light-purple);
   font-weight: 700;
   margin: 0 0.5rem;
@@ -198,7 +197,7 @@ font-weight: 700;
 @media (max-width: 768px) {
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .dot {
