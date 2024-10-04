@@ -102,6 +102,30 @@ font-weight: 700;
   border: none;
 }
 
+.btn-purple-sm {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  background-image: linear-gradient(60deg, #63458a, #9071b8, #b79fde, #63458a);
+  background-size: 400%;
+  background-position: right;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--light);
+  transition: background 1.5s, box-shadow 0.3s;
+}
+
+.btn-purple-sm:hover, .btn-purple-sm:focus, .btn-purple-sm:active {
+  background-position: left;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: var(--light);
+  border: none;
+}
+
 .prof-pic {
   width: 400px;
   height: auto;
@@ -160,6 +184,9 @@ font-weight: 700;
   min-height: 600px;
   padding: 1rem;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .project span {
